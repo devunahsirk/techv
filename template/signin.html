@@ -1,16 +1,26 @@
-<form>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Re enter Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <br>
-    <button type="submit" class="btn btn-primary">Create account</button>
-  </form>
+<!DOCTYPE html>
+
+<html>
+  <head>
+  
+  </head>
+  
+  <body>
+    <h1>Welcome to login portal</h1>
+    <form action="/signin" method="post">
+    {% csrf_token %}  
+    
+            <label for="exampleInputEmail1">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Create a username" Required>
+    
+        <br><br>
+       
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="pass1" name="pass1" Required>
+    
+        
+        <br>
+        <button type="submit" class="btn btn-primary">Create account</button>
+      </form>
+  </body>    
+</html>  
